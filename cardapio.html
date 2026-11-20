@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sabores da Casa | Cardápio Digital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="images/logo.png">
+</head>
+<body class="bg-body-tertiary">
+<header class="cabecalho">
+    <a href="#" class="logo">⌗ ⋮ Sabores<span> da Casa</span></a>
+
+    <!-- Menu mobile (funciona só com CSS) -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+    <label for="menu-toggle" class="menu-botao" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </label>
+
+    <nav class="menu">
+      <a href="index.html">Início</a>
+      <a href="cardapio.html"class="ativo" >Cardápio</a>
+      <a href="sobre.html">Sobre</a>
+    </nav>
+
+    <div class="acoes">
+      <a href="index.html" class="icone" aria-label="Buscar">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      </a>
+      <a href="cardapio.html" class="icone" aria-label="Carrinho">
+        <svg viewBox="0 0 24 24"><path d="M3 4h2l2.4 10.2a1 1 0 0 0 1 .8h8.9a1 1 0 0 0 1-.8L20 8H6.2"/><circle cx="9" cy="19" r="1.4"/><circle cx="17" cy="19" r="1.4"/></svg>
+      </a>
+      <a href="#" class="icone" aria-label="Notificações">
+        <svg viewBox="0 0 24 24"><path d="M6 16V11a6 6 0 1 1 12 0v5l1.5 2h-15Z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg>
+      </a>
+      <a href="#" class="botao botao-contorno botao-pequeno">Entrar</a>
+    </div>
+  </header>
+
+  
+  <main class="container pb-5">
+  
+    <div id="mensagem" aria-live="polite"></div>
+    <div class="row g-4">
+      <section class="col-lg-8">
+        <input id="busca" type="search" class="form-control mb-3" placeholder="Buscar prato…" aria-label="Buscar prato">
+        <div id="filtros" class="d-flex flex-wrap gap-2 mb-3"></div>
+        <div id="lista" class="row g-3"></div>
+      </section>
+      <aside class="col-lg-4">
+        <div class="card shadow-sm sticky-lg-top" style="top:1rem">
+          <div class="card-header fw-semibold">Seu pedido: </div>
+          <ul id="pedido" class="list-group list-group-flush"></ul>
+          <div class="card-body">
+            <div class="d-flex justify-content-between mb-3"><span>Total</span><strong id="total">R$ 0,00</strong></div>
+            <button id="btn-finalizar" class="btn btn-primary w-100">Finalizar pedido</button>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+    <footer class="rodape">
+    <div class="rodape-conteudo">
+
+      <!-- Marca + redes sociais -->
+      <div class="rodape-marca">
+        <a href="#" class="logo">Sabores<span> da Casa</span></a>
+        <p>
+          Comida mineira feita na hora, com receitas de família e ingredientes
+          frescos da roça. Chama a gente no Instagram ou vem almoçar por aqui.
+        </p>
+
+        <div class="rodape-redes">
+          <a href="https://instagram.com/luveirali" target="_blank" rel="noopener" aria-label="Instagram @luveirali">
+            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+          </a>
+          <a href="mailto:lu.veirali@icloud.com" aria-label="Enviar e-mail">
+            <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6 8.5-6"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Links do cardápio -->
+      <div>
+        <h3>Cardápio</h3>
+        <ul>
+          <li><a href="#">Tutu com torresmo</a></li>
+          <li><a href="#">Frango com quiabo</a></li>
+          <li><a href="#">Feijão tropeiro</a></li>
+          <li><a href="#">Pão de queijo</a></li>
+          <li><a href="#">Doce de leite com queijo</a></li>
+        </ul>
+      </div>
+
+      <!-- Horário de atendimento -->
+      <div>
+        <h3>Atendimento</h3>
+        <ul>
+          <li>Segunda a sexta: 10h às 20h</li>
+          <li>Sábado e domingo: 11h30 às 22h30</li>
+        </ul>
+      </div>
+
+      <!-- Contato -->
+      <div>
+        <h3>Contato</h3>
+        <ul>
+          <li><a href="mailto:lu.veirali@icloud.com">lu.veirali@icloud.com</a></li>
+          <li><a href="https://instagram.com/luveirali" target="_blank" rel="noopener">@luveirali</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="rodape-base">
+      <div>
+        <span>© 2026 Sabores da Casa. Todos os direitos reservados.</span>
+        <span>Feito com carinho em Minas Gerais</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/dados.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

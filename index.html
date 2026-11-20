@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sabores da Casa </title>
+  <meta name="description" content="Comida mineira de verdade, feita com o carinho de casa. Veja o cardápio do Sabores da Casa e faça seu pedido." />
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Estilos -->
+  <link rel="icon" type="image/x-icon" href="images/logo.png">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ================= CABEÇALHO ================= -->
+  <header class="cabecalho">
+    <a href="#" class="logo">⌗ ⋮ Sabores<span> da Casa</span></a>
+
+    <!-- Menu mobile (funciona só com CSS) -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+    <label for="menu-toggle" class="menu-botao" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </label>
+
+    <nav class="menu">
+      <a href="index.html" class="ativo">Início</a>
+      <a href="cardapio.html">Cardápio</a>
+      <a href="sobre.html">Sobre</a>
+    </nav>
+
+    <div class="acoes">
+      <a href="index.html" class="icone" aria-label="Buscar">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      </a>
+      <a href="cardapio.html" class="icone" aria-label="Carrinho">
+        <svg viewBox="0 0 24 24"><path d="M3 4h2l2.4 10.2a1 1 0 0 0 1 .8h8.9a1 1 0 0 0 1-.8L20 8H6.2"/><circle cx="9" cy="19" r="1.4"/><circle cx="17" cy="19" r="1.4"/></svg>
+      </a>
+      <a href="#" class="icone" aria-label="Notificações">
+        <svg viewBox="0 0 24 24"><path d="M6 16V11a6 6 0 1 1 12 0v5l1.5 2h-15Z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg>
+      </a>
+      <a href="#" class="botao botao-contorno botao-pequeno">Entrar</a>
+    </div>
+  </header>
+
+  <!-- ================= DESTAQUE (HERO) ================= -->
+  <main class="hero">
+
+    <!-- Lado esquerdo: pratos -->
+    <div class="hero-visual">
+      <!-- Folhinhas decorativas -->
+      <span class="folha folha-1"></span>
+      <span class="folha folha-2"></span>
+      <span class="folha folha-3"></span>
+
+      <!-- Arco verde -->
+      <div class="arco"></div>
+
+      <!-- Prato principal -->
+      <img class="prato-principal" src="images/frango-com-quiabo.jpg" alt="Frango com quiabo servido em tigela branca" />
+
+      <!-- Pratos menores em volta -->
+      <img class="prato prato-destaque" src="images/pao-de-queijo.jpg" alt="Pão de queijo com cafezinho" />
+      <img class="prato prato-1" src="images/tutu.jpg" alt="Tutu de feijão com torresmo e couve" />
+      <img class="prato prato-2" src="images/tropeiro.jpg" alt="Feijão tropeiro mineiro" />
+      <img class="prato prato-3" src="images/doce-de-leite.jpg" alt="Doce de leite com queijo minas" />
+    </div>
+
+    <!-- Lado direito: texto -->
+    <div class="hero-texto">
+      <h1>
+        ─ Comida <span class="destaque">Mineira</span> de Verdade,
+        Feita com o <span class="destaque">Carinho</span> de Casa! ؛ ଓ 
+      </h1>
+
+      <p>
+        Do tutu com torresmo ao pão de queijo saindo do forno, cada prato do
+        nosso cardápio carrega o tempero das receitas de família de Minas
+        Gerais. Peça agora e sinta o sabor de casa onde você estiver. ꕤ ｡  ˚⋆ 
+      </p>
+
+      <div class="hero-botoes">
+        <a href="#" class="botao botao-cheio">
+          Ver Cardápio
+          <svg viewBox="0 0 24 24"><path d="M3 4h2l2.4 10.2a1 1 0 0 0 1 .8h8.9a1 1 0 0 0 1-.8L20 8H6.2"/><circle cx="9" cy="19" r="1.4"/><circle cx="17" cy="19" r="1.4"/></svg>
+        </a>
+        <a href="#" class="botao botao-contorno">Saiba Mais</a>
+      </div>
+    </div>
+
+  </main>
+  <!-- ================= RODAPÉ ================= -->
+  <footer class="rodape">
+    <div class="rodape-conteudo">
+
+      <!-- Marca + redes sociais -->
+      <div class="rodape-marca">
+        <a href="#" class="logo">Sabores<span> da Casa</span></a>
+        <p>
+          Comida mineira feita na hora, com receitas de família e ingredientes
+          frescos da roça. Chama a gente no Instagram ou vem almoçar por aqui.
+        </p>
+
+        <div class="rodape-redes">
+          <a href="https://instagram.com/luveirali" target="_blank" rel="noopener" aria-label="Instagram @luveirali">
+            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+          </a>
+          <a href="mailto:lu.veirali@icloud.com" aria-label="Enviar e-mail">
+            <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6 8.5-6"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Links do cardápio -->
+      <div>
+        <h3>Cardápio</h3>
+        <ul>
+          <li><a href="#">Tutu com torresmo</a></li>
+          <li><a href="#">Frango com quiabo</a></li>
+          <li><a href="#">Feijão tropeiro</a></li>
+          <li><a href="#">Pão de queijo</a></li>
+          <li><a href="#">Doce de leite com queijo</a></li>
+        </ul>
+      </div>
+
+      <!-- Horário de atendimento -->
+      <div>
+        <h3>Atendimento</h3>
+        <ul>
+          <li>Segunda a sexta: 10h às 20h</li>
+          <li>Sábado e domingo: 11h30 às 22h30</li>
+        </ul>
+      </div>
+
+      <!-- Contato -->
+      <div>
+        <h3>Contato</h3>
+        <ul>
+          <li><a href="mailto:lu.veirali@icloud.com">lu.veirali@icloud.com</a></li>
+          <li><a href="https://instagram.com/luveirali" target="_blank" rel="noopener">@luveirali</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="rodape-base">
+      <div>
+        <span>© 2026 Sabores da Casa. Todos os direitos reservados.</span>
+        <span>Feito com carinho em Minas Gerais</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

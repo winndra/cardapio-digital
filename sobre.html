@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sabores da Casa | Sobre Nós </title>
+  <meta name="description" content="Conheça o Sabores da Casa: comida mineira feita na hora, com receitas de família e ingredientes frescos." />
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Estilos: o mesmo visual da home + os ajustes desta página -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="images/logo.png">
+</head>
+<body class="pagina-sobre">
+
+  <!-- ================= CABEÇALHO ================= -->
+ <header class="cabecalho">
+    <a href="index.html" class="logo">⌗ ⋮ Sabores<span> da Casa</span></a>
+
+    <!-- Menu mobile (funciona só com CSS) -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+    <label for="menu-toggle" class="menu-botao" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </label>
+
+    <nav class="menu">
+      <a href="index.html">Início</a>
+      <a href="cardapio.html">Cardápio</a>
+      <a href="sobre.html"class="ativo" >Sobre</a>
+    </nav>
+
+    <div class="acoes">
+      <a href="index.html" class="icone" aria-label="Buscar">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      </a>
+      <a href="cardapio.html" class="icone" aria-label="Carrinho">
+        <svg viewBox="0 0 24 24"><path d="M3 4h2l2.4 10.2a1 1 0 0 0 1 .8h8.9a1 1 0 0 0 1-.8L20 8H6.2"/><circle cx="9" cy="19" r="1.4"/><circle cx="17" cy="19" r="1.4"/></svg>
+      </a>
+      <a href="#" class="icone" aria-label="Notificações">
+        <svg viewBox="0 0 24 24"><path d="M6 16V11a6 6 0 1 1 12 0v5l1.5 2h-15Z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg>
+      </a>
+      <a href="#" class="botao botao-contorno botao-pequeno">Entrar</a>
+    </div>
+  </header>
+
+  <!-- ================= APRESENTAÇÃO ================= -->
+  <main>
+    <section class="sobre-hero">
+      <div class="sobre-hero-texto">
+        <span class="selo">⭑.ᐟ Sobre a casa:</span>
+        <h1>Comida que <span class="destaque">lembra</span> a casa da <span class="destaque">vovó</span> ⋆˚࿔</h1>
+        <p>
+          O Sabores da Casa somos eu e meu grupo de amigas, daquele jeito que a gente
+          aprendeu na cozinha de casa: panela de ferro, fogo baixo e tempo para
+          o tempero entrar. Aqui nada é feito de véspera nem de pressa.
+        </p>
+        <p>
+          A gente escolhe os ingredientes, cozinha no dia e serve do jeito que
+          serviria na mesa de casa. É comida mineira de verdade a que
+          abraça.
+        </p>
+        <div class="hero-botoes">
+          <a href="cardapio.html" class="botao botao-cheio">Ver Cardápio</a>
+          <a href="https://instagram.com/luveirali" target="_blank" rel="noopener" class="botao botao-contorno">
+            Falar com a gente
+          </a>
+        </div>
+      </div>
+
+      <div class="sobre-hero-foto">
+        <img src="images/mesa.jpg" alt="Mesa rústica com panela de ferro, arroz, couve, farofa e pão de queijo" />
+      </div>
+    </section>
+
+    <!-- ================= COMO A GENTE FAZ ================= -->
+    <section class="valores">
+      <h2>⊹ ࣪ ˖ Como a gente faz: </h2>
+      <div class="valores-grade">
+
+        <article class="valor">
+          <span class="valor-icone">
+            <svg viewBox="0 0 24 24"><path d="M12 20s-7-4.3-7-9a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 4.7-7 9-7 9Z"/></svg>
+          </span>
+          <h3>Receita de família</h3>
+          <p>
+            Tutu, frango com quiabo, tropeiro: cada prato vem de caderno de
+            receita, com o jeito e o tempero de sempre.
+          </p>
+        </article>
+
+        <article class="valor">
+          <span class="valor-icone">
+            <svg viewBox="0 0 24 24"><path d="M20 4c0 8-5 12-12 12H5c0-7 5-11 11-11h4Z"/><path d="M5 20c2-5 5-8 9-10"/></svg>
+          </span>
+          <h3>Ingrediente fresco</h3>
+          <p>
+            Feijão, couve, quiabo e queijo escolhidos na hora. O que não está
+            bom não entra na panela.
+          </p>
+        </article>
+
+        <article class="valor">
+          <span class="valor-icone">
+            <svg viewBox="0 0 24 24"><path d="M12 21a7 7 0 0 0 7-7c0-4-3-6-3-9-3 1-4 3-4 5-1-1-2-2-3-2-2 2-4 4-4 6a7 7 0 0 0 7 7Z"/></svg>
+          </span>
+          <h3>Feito na hora</h3>
+          <p>
+            Cozinha aberta no horário do pedido, sem comida esperando na
+            bandeja. Sai quentinho, do jeito que tem que ser.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ================= NOSSA COZINHA ================= -->
+    <section class="cozinha">
+      <div class="cozinha-foto">
+        <img src="images/tutu.jpg" alt="Tutu de feijão com torresmo e couve" />
+        <img src="images/pao-de-queijo.jpg" alt="Pão de queijo quentinho" />
+      </div>
+      <div class="cozinha-texto">
+        <h2>𐙚⋆.˚ Nossa cozinha</h2>
+        <p>
+          Não tem cardápio gigante nem cozinha industrial. Tem panela pequena,
+          fogão aceso e o cuidado de quem faz comida para quem gosta: cada
+          prato passa pelo nosso time do começo ao fim, da escolha do
+          ingrediente até a hora de servir.
+        </p>
+        <p>
+          Se você quiser saber o que está saindo hoje, é só chamar no
+          Instagram a gente conta antes de você pedir.
+        </p>
+        <ul class="cozinha-lista">
+          <li>Cardápio enxuto: poucos pratos, todos bem feitos</li>
+          <li>Porções de comida caseira, daquelas que servem bem</li>
+          <li>Doces mineiros para fechar a refeição com carinho</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= NOSSO TIME ================= -->
+    <section class="time">
+      <h2>𐙚⋆.˚ Nosso time :</h2>
+     <h3> · · ─ ·ʚɞ· ─ · ·</h3>
+      <p class="time-apresentacao">
+        Somos eu e meu grupo: as chefes cuidam do tempero e do ponto de cada
+        prato, e as cozinheiras fazem a comida sair quentinha, todo dia.
+      </p>
+
+      <!-- Foto do time -->
+      <div class="time-foto">
+        <img src="images/time.png" alt="As chefes Luiza Oliveira e Julia Riane de uniforme branco na cozinha" />
+      </div>
+      
+    <h2>⋆. 𐙚 ˚❀⋆.ೃ࿔*:･</h2>
+      <div class="time-grade">
+        <article class="pessoa">
+          <span class="pessoa-iniciais">LO</span>
+          <h3>Luiza Oliveira</h3>
+          <span class="pessoa-papel">Chefe</span>
+        </article>
+        <article class="pessoa">
+          <span class="pessoa-iniciais">JR</span>
+          <h3>Julia Riane</h3>
+          <span class="pessoa-papel">Chefe</span>
+        </article>
+        <article class="pessoa">
+          <span class="pessoa-iniciais">L</span>
+          <h3>Luiza</h3>
+          <span class="pessoa-papel">Cozinheira</span>
+        </article>
+        <article class="pessoa">
+          <span class="pessoa-iniciais">SM</span>
+          <h3>Sarah Marcelle</h3>
+          <span class="pessoa-papel">Cozinheira</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= CHAMADA ================= -->
+    <section class="chamada">
+      <div>
+        <h2>Bateu aquela fome de comida de casa?</h2>
+        <p>Segunda a sexta das 10h às 20h, sábado e domingo das 11h30 às 22h30.</p>
+      </div>
+      <div class="chamada-botoes">
+        <a href="#" class="botao botao-cheio botao-invertido">Ver Cardápio</a>
+        <a href="mailto:lu.veirali@icloud.com" class="botao botao-contorno botao-invertido">lu.veirali@icloud.com</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= RODAPÉ ================= -->
+  <footer class="rodape">
+    <div class="rodape-conteudo">
+
+      <!-- Marca + redes sociais -->
+      <div class="rodape-marca">
+        <a href="index.html" class="logo">Sabores<span> da Casa</span></a>
+        <p>
+          Comida mineira feita na hora, com receitas de família e ingredientes
+          frescos da roça. Chama a gente no Instagram ou vem almoçar por aqui.
+        </p>
+
+        <div class="rodape-redes">
+          <a href="https://instagram.com/luveirali" target="_blank" rel="noopener" aria-label="Instagram @luveirali">
+            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+          </a>
+          <a href="mailto:lu.veirali@icloud.com" aria-label="Enviar e-mail">
+            <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6 8.5-6"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Links do cardápio -->
+      <div>
+        <h3>Cardápio</h3>
+        <ul>
+          <li><a href="#">Tutu com torresmo</a></li>
+          <li><a href="#">Frango com quiabo</a></li>
+          <li><a href="#">Feijão tropeiro</a></li>
+          <li><a href="#">Pão de queijo</a></li>
+          <li><a href="#">Doce de leite com queijo</a></li>
+        </ul>
+      </div>
+
+      <!-- Horário de atendimento -->
+      <div>
+        <h3>Atendimento</h3>
+        <ul>
+          <li>Segunda a sexta: 10h às 20h</li>
+          <li>Sábado e domingo: 11h30 às 22h30</li>
+        </ul>
+      </div>
+
+      <!-- Contato -->
+      <div>
+        <h3>Contato</h3>
+        <ul>
+          <li><a href="mailto:lu.veirali@icloud.com">lu.veirali@icloud.com</a></li>
+          <li><a href="https://instagram.com/luveirali" target="_blank" rel="noopener">@luveirali</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="rodape-base">
+      <div>
+        <span>© 2026 Sabores da Casa. Todos os direitos reservados.</span>
+        <span>Feito com carinho em Minas Gerais</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
